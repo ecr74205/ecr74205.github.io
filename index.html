@@ -2,25 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eva Rich</title>
-    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercise 3</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <style>
+      .flex1 {
+        display: flex;
+      }
+      /* Add your CSS here. */
+    </style>
   </head>
+  <body>
+    <header id="site-header" style="width: 1440px; height: 100px; margin-top: 10px; margin-left: 10px;">
+      <div class="row">
+        <div class="col-100" style="width: 1440px; height: 100px; border: 1px solid; ">
+        header: col-100<br />This entire layout is 1440px wide <style>alig</style>
+        </div >
+      </div>
+    </header>
+    <main>
+      <div id="content" >
+        <div class="flex1">
+          <div class="col-a">col-a</div>
+          <div class="col-b">col-b<br />(width 200px)
+            style="width: 200px; height: 100px; border: 1px solid;"</div>
+        </div>
 
-  <h1
-  style="color: rgb(221, 69, 173);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;"
- 
-  >Eva Rich</h1>
+        <div class="row">
+          <div class="col-50">col-50</div>
+          <div class="col-50">col-50</div>
+        </div>
 
-<body
-style="background-color: blanchedalmond;">
+        <div class="row">
+          <div class="col-33">col-33</div>
+          <div class="col-33">col-33</div>
+          <div class="col-33">col-33</div>
+        </div>
+      </div>
 
-<p
-
-style="background-color: rgb(200, 173, 228);text-align: center;">Hello my name is Eva and I am a Graphic Design student at HACC.</p>
-<img src="sunset.jpg" alt="picture of sunset" />
-</body>
+      <footer>
+        <div class="row">
+          <div class="col-100">footer: col-100</div>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
