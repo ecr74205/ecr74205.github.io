@@ -4,36 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Exercise 3</title>
+    <title>Assignment 3</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <style>
-      .flex1 {
-        display: flex;
-      }
-      /* Add your CSS here. */
+    div{
+      height:100px; width: 1400px;
+    }
+    .flex{
+      display: flex;
+    }
     </style>
   </head>
   <body>
-    <header id="site-header" style="width: 1440px; height: 100px; margin-top: 10px; margin-left: 10px;">
+    <header id="site-header">
       <div class="row">
-        <div class="col-100" style="width: 1440px; height: 100px; border: 1px solid; ">
-        header: col-100<br />This entire layout is 1440px wide <style>alig</style>
-        </div >
+        <div class="col-100" style="width: 1440px; margin: 20px; padding: 20px; border: 1px solid; text-align: center;">
+          header: col-100<br />This entire layout is 1440px wide
+        </div>
       </div>
     </header>
-    <main>
+    <main style="background-color: grey;">
       <div id="content" >
-        <div class="flex1">
-          <div class="col-a">col-a</div>
-          <div class="col-b">col-b<br />(width 200px)
-            style="width: 200px; height: 100px; border: 1px solid;"</div>
+        <div class="flex">
+          <div class="col-a" style= " 1420px; margin: 30px;padding-top: 30px; border: 1px solid; position: fixed; background-color: white;">col-a</div>
+          <div class="col-b" style="width: 200px;">col-b<br />(width 200px)</div>
         </div>
 
         <div class="row">
-          <div class="col-50">col-50</div>
           <div class="col-50">col-50</div>
         </div>
 
