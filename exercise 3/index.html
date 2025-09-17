@@ -1,54 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Assignment 3</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <style>
-    div{
-      height:100px; width: 1400px;
-    }
-    .flex{
-      display: flex;
-    }
-    </style>
-  </head>
-  <body>
-    <header id="site-header">
-      <div class="row">
-        <div class="col-100" style="width: 1440px; margin: 20px; padding: 20px; border: 1px solid; text-align: center;">
-          header: col-100<br />This entire layout is 1440px wide
-        </div>
-      </div>
-    </header>
-    <main style="background-color: grey;">
-      <div id="content" >
-        <div class="flex">
-          <div class="col-a" style= " 1420px; margin: 30px;padding-top: 30px; border: 1px solid; position: fixed; background-color: white;">col-a</div>
-          <div class="col-b" style="width: 200px;">col-b<br />(width 200px)</div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wireframe Layout</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #ccc; /* gray background */
+}
 
-        <div class="row">
-          <div class="col-50">col-50</div>
-        </div>
+.container {
+  width: 1440px;
+  margin: 0 auto;
 
-        <div class="row">
-          <div class="col-33">col-33</div>
-          <div class="col-33">col-33</div>
-          <div class="col-33">col-33</div>
-        </div>
-      </div>
+}
 
-      <footer>
-        <div class="row">
-          <div class="col-100">footer: col-100</div>
-        </div>
-      </footer>
-    </main>
-  </body>
+/* Header and Footer */
+header, footer {
+  background: #fff;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #000;
+  height: 50px;
+}
+
+/* Flex row setup — no spacing between rows or columns */
+.row,
+.center-section {
+  display: flex;
+}
+
+/* Top row */
+.col-a {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #000;
+  text-align: center;
+  height: 50px;
+}
+
+.col-b {
+  width: 200px;
+  background: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #000;
+  height: 50px;
+  text-align: center;
+}
+
+
+/* Two equal columns */
+.col-50 {
+  width: 50%;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #000;
+  text-align: center;
+  height: 50px;
+}
+
+/* Three equal columns */
+.col-33 {
+  width: 33.33%;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #000;
+  text-align: center;
+  height: 50px;
+}
+</style>
+<body>
+  <div class="container">
+    <header class="col-100">header: col-100 </style></header>
+
+    <div class="row">
+      <div class="col-a">col-a</div>
+      <div class="col-b">col-b (width 200px)</div>
+    </div>
+
+    <div class="row center-section">
+      <div class="col-50">col-50</div>
+      <div class="col-50">col-50</div>
+    </div>
+
+    <div class="row">
+      <div class="col-33">col-33</div>
+      <div class="col-33">col-33</div>
+      <div class="col-33">col-33</div>
+    </div>
+
+    <footer class="col-100">footer: col-100</footer>
+  </div>
+</body>
 </html>
