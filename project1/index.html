@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1440, initial-scale=1.0" />
+  <title>Explore Central PA</title>
+  <style>
+
+    
+    body {
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+      width: 1440px;
+      overflow-x: hidden;
+      font-family: "Jacques Francois", serif;
+    }
+    header {
+      background: url('your-bridge-image.jpg') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(244, 244, 225, 1);
+      font-size: 96px;
+      
+      
+    }
+
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 96px;
+}
+
+#top-bar {
+ 
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  background-color: transparent;
+  padding: 5px 50px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+#top-bar a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: white ;
+}
+
+#top-bar a:hover {
+  text-decoration: underline;
+}
+
+    section.intro {
+      padding: 20px;
+      text-align: center;
+      color:rgba(46, 45, 77, 1);
+      font-family: Jacques Francois;
+      background-color: rgba(208, 206, 124, 0.9);
+    }
+    section.intro h2 {
+      font-size: 42px;
+      margin-top: 10px;
+      margin-bottom: 0px;
+      font-weight: lighter;
+      text-align: center;
+      
+    }
+    section.intro p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 5px auto 20px auto;
+    }
+    section.destinations {
+      padding: 40px;
+      background-color:  rgba(69, 86, 109, 1);
+    }
+    section.destinations h2 {
+      text-align: left;
+      font-size: 48px;
+      font-weight: lighter;
+      margin-left: 85px;
+      color: rgba(244, 244, 225, 1);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: stretch;
+    }
+    .card {
+      background-color: rgba(208, 206, 124, 0.9);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: rgba(46, 45, 77, 1);
+      width: 400px;
+      height: 525px;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-sizing: border-box;
+    }
+    .card-header h3 {
+      margin-top: 0;
+      padding-bottom: 0px;
+      font-size: 30px;
+      font-weight: lighter;
+      text-align: center;
+      height: 35px;
+    }
+    .card img {
+      width: 360px;
+      height: 284px;
+      border-radius: 25px;
+      align-content: center;
+      object-fit: cover;
+      display: block;
+
+}
+
+    .card-header {
+      padding-left: 10px;
+      text-align: center;
+      box-sizing: border-box;
+      margin-top: auto;
+      margin-bottom: 15px;
+    }
+     .card-body {
+      padding-left: 20px;
+      overflow: hidden;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 431px;
+      width: 400px;
+    }
+
+
+    .card-body p {
+      font-size: 16px;
+      font-family: Instrument ,sans-serif;
+      line-height: 1.4;
+      text-align: left;
+      padding-right: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: rgba(208, 206, 124, 0.9);
+      color: rgba(46, 45, 77, 1) ;
+      font-size: 14px;
+    }
+    .card-link {
+  display: inline-flex;
+  padding-bottom: 10px;
+  font-size: 15px;
+  color: rgba(46, 45, 77, 1);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.card-link:hover {
+  color: white;
+}
+.card-title-link {
+  margin-top: 0;
+  padding-bottom: 0px;
+  font-size: 30px;
+  font-family: "Jacques Francois", serif;
+  font-weight: lighter;
+  text-align: center;
+  height: 35px;
+  text-decoration: none;
+  color: rgba(46, 45, 77, 1);
+  transition: color 0.3s ease;
+  display: inline-flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  margin-top: auto;
+      margin-bottom: 15px;
+}
+
+.card-title-link:hover {
+  color: white;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div id="top-bar">
+    <a href="#search">Search</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+  </div>
+    EXPLORE CENTRAL PA
+  </header>
+
+  <section class="intro">
+    <h2>Experience the Heart of Pennsylvania</h2>
+    <p>
+      Welcome to Central Pennsylvania – a region rich in natural beauty, small-town charm, and vibrant culture. Central PA offers something for every traveler. From outdoor adventures and family-friendly amusements parks, historical museums, and shopping, plan your perfect trip and experience the heart of Pennsylvania like never before.
+    </p>
+  </section>
+
+  <section class="destinations">
+    <h2>Your Adventure Starts Here</h2>
+    <div class="grid">
+      <div class="card">
+       <div class="card-header">
+       <a href="https://www.hersheypark.com" target="_blank" class="card-link card-title-link">Hershey Park</a>
+       </div>
+        <div class="card-body">
+          <a href="https://www.hersheypark.com" target="_blank">
+         <img src="hershey-park.jpg" alt="Hershey Park" />
+        </a>
+          <p>A renowned amusement park featuring exciting rides, live entertainment, and an opportunity to learn about chocolate-making at Hershey's Chocolate World.</p>
+          <a href="https://www.hersheypark.com" target="_blank" class="card-link">Learn More →</a>
+        </div> 
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a href="https://www.pacapitol.com" target="_blank" class="card-link card-title-link">Pennsylvania State Capitol</a>
+       </div> 
+        <div class="card-body">
+          <a href="https://www.pacapitol.com" target="_blank">
+          <img src="state-capitol.jpg" alt="State Capitol"/>
+          </a>
+          <p>An impressive architectural gem in Harrisburg showcasing exquisite artwork, stunning interiors, and guided tours to learn about the state's government and history.</p>
+          <a href="https://www.pacapitol.com" target="_blank" class="card-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/WorldsEndStatePark" target="_blank" class="card-link card-title-link">Worlds End State Park</a>
+          </div> 
+        <div class="card-body">
+          <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/WorldsEndStatePark" target="_blank">
+          <img src="worlds-end.jpg" alt="Worlds End State Park" />
+         </a>
+          <p>Situated in the Endless Mountains, this park is known for its rugged beauty, with hiking trails, waterfalls, and breathtaking views of the Loyalsock Creek Gorge.</p>
+          <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/WorldsEndStatePark" target="_blank" class="card-link">Learn More →</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-header">
+          <a href="https://www.nps.gov/gett" target="_blank" class="card-link card-title-link">Gettysburg National Military Park</a>
+         </div> 
+        <div class="card-body">
+          <a href="https://www.nps.gov/gett" target="_blank">
+         <img src="gettysburg.jpg" alt="Gettysburg" />
+         </a>
+          <p>Site of the pivotal Battle of Gettysburg during the Civil War, offering guided tours, historic monuments, and a visitor center with exhibits.</p>
+          <a href="https://www.nps.gov/gett" target="_blank" class="card-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/PineGroveFurnaceStatePark" target="_blank" class="card-link card-title-link">Pine Grove Furnace State Park</a>
+         </div> 
+         
+        <div class="card-body">
+          <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/PineGroveFurnaceStatePark" target="_blank">
+         <img src="pine-grove.jpg" alt="Pine Grove Furnace" />
+         </a>
+          <p>Serving as the "Gateway to the Appalachian Trail," this park offers hiking, picnicking, and swimming opportunities, along with historic features and natural beauty.</p>
+          <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/PineGroveFurnaceStatePark" target="_blank" class="card-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+           <a href="https://www.centralmarketyork.com" target="_blank" class="card-link card-title-link">Central Market York</a>
+            </div>
+        <div class="card-body">  
+          <a href="https://www.centralmarketyork.com" target="_blank">
+          <img src="central-market.jpg" alt="Central Market York" />
+         </a>
+          <p>The oldest continuously operating farmers' market in the U.S., offering a bustling atmosphere, local produce, crafts, and diverse food vendors.</p>
+          <a href="https://www.centralmarketyork.com" target="_blank" class="card-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+           <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/ColtonPointStatePark" target="_blank" class="card-link card-title-link">The Pennsylvania Grand Canyon</a>
+            </div>
+        <div class="card-body">
+          <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/ColtonPointStatePark" target="_blank">
+         <img src="susquehanna-canyon.jpg" alt="Susquehanna Grand Canyon" />
+         </a>
+          <p>Also known as Pine Creek Gorge, this natural wonder features stunning vistas, hiking trails, and opportunities for outdoor recreation.</p>
+          <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/ColtonPointStatePark" target="_blank" class="card-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+           <a href="https://www.rrmuseumpa.org" target="_blank" class="card-link card-title-link">Railroad Museum of Pennsylvania</a>
+            </div>
+        <div class="card-body">
+          <a href="https://www.rrmuseumpa.org" target="_blank">
+          <img src="railroad-museum.jpg" alt="Railroad Museum" />
+         </a>
+          <p>Located in Strasburg, this museum boasts an extensive collection of vintage locomotives, rail cars, and exhibits, showcasing the rich history of railroading.</p>
+          <a href="https://www.rrmuseumpa.org" target="_blank" class="card-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+           <a href="https://www.lewisburgpa.com" target="_blank" class="card-link card-title-link">Lewisburg</a>
+            </div>
+        <div class="card-body">
+          <a href="https://www.lewisburgpa.com" target="_blank">
+          <img src="lewisburg.jpg" alt="Lewisburg" />
+         </a>
+          <p>A charming small town known for its historic downtown, offering boutique shops, galleries, and restaurants, as well as attractions like the Lewisburg Farmers Market and Packwood House Museum.</p>
+          <a href="https://www.lewisburgpa.com" target="_blank" class="card-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Explore Central PA. All rights reserved.
+  </footer>
+
+</body>
+</html>
