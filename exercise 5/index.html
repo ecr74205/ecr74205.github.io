@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+   img {
+    max-width: 100%;
+    height: auto;
+   }
 #primary-nav ul { padding-left: 0; }
 #primary-nav li { 
   list-style: none; 
   display: inline-block;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+  font-family: 'Times New Roman', Times, serif;
+  
 }
 #primary-nav a { 
   background-color: orchid;
@@ -20,11 +24,19 @@
 } 
 .container {
       display: flex;
-      gap: 20px; /* space between columns */
+      gap: 20px;
+      flex-direction: row; /* space between columns */
     }
     .column {
       flex: 1; /* each column takes equal width */
     }
+    .inner {overflow: hidden;}
+#toggle-nav-btn {
+    display: none;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
 @media (max-width: 767px) {
     #primary-nav {
       display: grid;
@@ -45,37 +57,12 @@
     }
   }
 
-.inner {overflow: hidden;}
-#toggle-nav-button {
-    display: none;
-    position: absolute;
-    right: 1em;
-    top: 1em;
-}
 
 
     </style>
   </head>
-<script>
-    // Perform this after the window has loaded
-    window.onload = () => {
-      // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
-      const toggleNavBtn = document.getElementById('toggle-nav-btn');
-      toggleNavBtn.innerHTML = '&#9776;';
 
-      // Tell button to do something on click
-      toggleNavBtn.addEventListener('click', () => {
-        // toggle the body's class attribute
-        document.body.classList.toggle('nav-open');
-        toggleNavBtn.innerHTML = document.body.classList.contains('nav-open')
-          ? '&#x2715'
-          : '&#9776;';
-      });
-    };
-  </script></Code>
-  <body>
-    
-
+    <body>
 <nav id="primary-nav">
     <div class="inner">
       <ul>
@@ -95,5 +82,22 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure vero debitis saepe odit dolorum perspiciatis quae praesentium atque blanditiis nesciunt animi, a corrupti. Rem eveniet distinctio dolor molestiae dolorem?</p>
     </div>
 <img src="https://picsum.photos/200" alt="">
+<script>
+    // Perform this after the window has loaded
+    window.onload = () => {
+      // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+      const toggleNavBtn = document.getElementById('toggle-nav-btn');
+      toggleNavBtn.innerHTML = '&#9776;';
+
+      // Tell button to do something on click
+      toggleNavBtn.addEventListener('click', () => {
+        // toggle the body's class attribute
+        document.body.classList.toggle('nav-open');
+        toggleNavBtn.innerHTML = document.body.classList.contains('nav-open')
+          ? '&#x2715'
+          : '&#9776;';
+      });
+    };
+  </script>
   </body>
 </html>
