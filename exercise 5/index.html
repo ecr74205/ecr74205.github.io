@@ -11,12 +11,20 @@
   list-style: none; 
   display: inline-block;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 #primary-nav a { 
   background-color: orchid;
   display: block; 
   padding: 1em;
 } 
+.container {
+      display: flex;
+      gap: 20px; /* space between columns */
+    }
+    .column {
+      flex: 1; /* each column takes equal width */
+    }
 @media (max-width: 767px) {
     #primary-nav {
       display: grid;
@@ -44,12 +52,10 @@
     right: 1em;
     top: 1em;
 }
-    
+
 
     </style>
   </head>
-
-  <body>
 <script>
     // Perform this after the window has loaded
     window.onload = () => {
@@ -67,6 +73,9 @@
       });
     };
   </script></Code>
+  <body>
+    
+
 <nav id="primary-nav">
     <div class="inner">
       <ul>
@@ -78,7 +87,13 @@
     </div>
   </nav>
 <button id="toggle-nav-btn"></button>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ullam! Obcaecati commodi esse odit aliquam mollitia eos doloribus perferendis voluptates? Autem eveniet ab eligendi incidunt et, laboriosam animi assumenda asperiores.
-
+<div class="container">
+    <div class="column">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut et veritatis quidem! Distinctio repellendus, error expedita ducimus dicta autem possimus ad odit? Possimus tempore velit, quisquam quam facilis fuga! Commodi.</p>
+    </div>
+    <div class="column">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure vero debitis saepe odit dolorum perspiciatis quae praesentium atque blanditiis nesciunt animi, a corrupti. Rem eveniet distinctio dolor molestiae dolorem?</p>
+    </div>
+<img src="https://picsum.photos/200" alt="">
   </body>
 </html>
