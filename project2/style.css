@@ -132,4 +132,7 @@ li {
   color: #030303;
   
 }
-
+.nav-item.active {
+  color: white;
+  font-weight: bold;
+}
