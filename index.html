@@ -4,82 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-#primary-nav ul { padding-left: 0; }
-#primary-nav li { 
-  list-style: none; 
-  display: inline-block;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#primary-nav a { 
-  background-color: orchid;
-  display: block; 
-  padding: 1em;
-} 
-@media (max-width: 767px) {
-    #primary-nav {
-      display: grid;
-      grid-template-rows: 0fr;
-      transition: grid-template-rows 0.5s ease-out;
-    }
-    #primary-nav li {
-      display: block;
-    }
-    body.nav-open #primary-nav {
-      grid-template-rows: 1fr;
-    }
-    .inner {
-      overflow: hidden;
-    }
-    #toggle-nav-btn {
-      display: block; /* display button beneath breakpoint */
-    }
-  }
+    <title>Eva Rich</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+.raleway-title {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}</style>
+</head>
 
-.inner {overflow: hidden;}
-#toggle-nav-button {
-    display: none;
-    position: absolute;
-    right: 1em;
-    top: 1em;
-}
-    
+<body
+style="background-color: blanchedalmond;">
 
-    </style>
-  </head>
+  <h1 class="raleway-title"
+  style="color: rgb(221, 69, 173);
+  "
+>
 
-  <body>
-<script>
-    // Perform this after the window has loaded
-    window.onload = () => {
-      // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
-      const toggleNavBtn = document.getElementById('toggle-nav-btn');
-      toggleNavBtn.innerHTML = '&#9776;';
+  Eva Rich</h1>
+<h2 class="raleway-title">
+  Graphic Designer</h2>
+<p
 
-      // Tell button to do something on click
-      toggleNavBtn.addEventListener('click', () => {
-        // toggle the body's class attribute
-        document.body.classList.toggle('nav-open');
-        toggleNavBtn.innerHTML = document.body.classList.contains('nav-open')
-          ? '&#x2715'
-          : '&#9776;';
-      });
-    };
-  </script></Code>
-<nav id="primary-nav">
-    <div class="inner">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-<button id="toggle-nav-btn"></button>
-
-
-
-  </body>
+style="background-color: rgb(200, 173, 228);text-align: center;">Hello my name is Eva and I am a Graphic Design student at HACC.</p>
+<img src="sunset.jpg" alt="picture of sunset" />
+</body>
 </html>
