@@ -82,7 +82,7 @@ h4{
 .burger-menu {
   display: none;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   top: 20px;
   right: 20px;
